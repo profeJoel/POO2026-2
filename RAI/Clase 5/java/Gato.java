@@ -47,4 +47,65 @@ public class Gato {
         //Devuelve los valores en formato String
         return "Mi nombre es " + this.name + " y soy " + this.sex + " y tengo " + this.age + " años.";
     }
+
+    //getters
+    //[visibilidad] [tipo de datos] get[Nombre atributo]()
+    public String getName(){
+        return this.name;
+    }
+
+    public String getSex(){
+        return this.sex;
+    }
+
+    public int getAge(){
+        return this.age;
+    }
+
+    public int getWeight(){
+        return this.weight;
+    }
+
+    public String getColor(){
+        return this.color;
+    }
+
+    public String getTexture(){
+        return this.texture;
+    }
+
+    // Setter
+    // public [void] set[nombre Atributo]([tipo argumento] newArgumento)
+    public void setName(String newName){
+        this.name = newName;
+    }
+
+    public void setSex(String newSex){
+        this.sex = newSex;
+    }
+
+    public void setAge(int newAge){
+        this.age = newAge;
+    }
+
+    public void setWeight(int newWeight){
+        this.weight = newWeight;
+    }
+
+    public void setColor(String newColor){
+        this.color = newColor;
+    }
+
+    public void setTexture(String newTexture){
+        this.texture = newTexture;
+    }
+
+    public void changeColor(String newColor){
+        if(newColor == "blanco" || newColor == "gris" || newColor == "naranjo"){
+            this.setColor(newColor);
+        }
+        else{
+            System.out.println("Color: " + newColor + " está prohibido...");
+        }
+    }
 }

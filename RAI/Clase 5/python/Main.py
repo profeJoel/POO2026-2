@@ -4,11 +4,11 @@ from Gato import Gato
 if __name__ == "__main__":
     #<nombre de objeto> = <nombre de clase>(atributos)
     oscar = Gato("Óscar", "macho", 3,7, "marrón", "rayado")
-    #print("El nuevo gato es: " + oscar.__name)
+    print("El nuevo gato es: " + oscar.get_name())
 
     luna = Gato("Luna", "hembra", 2,5,"gris", "lisa")
 
-    #print("El nuevo gato es: " + luna.__name)
+    print("El nuevo gato es: " + luna.get_name())
 
     oscar.eat()
     luna.move()
@@ -19,5 +19,6 @@ if __name__ == "__main__":
     print(luna)
 
     #luna.__color = "rosado"
+    luna.change_color("rosado")
 
-    #print("La gata " + luna.__name + " es " + luna.__color)
+    print("La gata " + luna.get_name() + " es " + luna.get_color())

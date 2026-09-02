@@ -9,11 +9,11 @@ public class Main {
         //[nombre del objeto] = new [Clase](valores del objeto)
         oscar = new Gato("Óscar", "macho", 3, 7, "marrón", "rayado");
 
-        System.out.println("El nuevo gato es: " + oscar.name);
+        System.out.println("El nuevo gato es: " + oscar.getName());
 
         Gato luna = new Gato("Luna", "hembra", 2, 5, "gris", "lisa");
 
-        System.out.println("El nuevo gato es: " + luna.name);
+        System.out.println("El nuevo gato es: " + luna.getName());
 
         oscar.eat();
         luna.move();
@@ -23,7 +23,8 @@ public class Main {
 
         System.out.println(luna.toString());
 
-        luna.color = "rosado";
-        System.out.println("La gata " + luna.name + " es " + luna.color);
+        //luna.color = "rosado";
+        luna.changeColor("blanco");
+        System.out.println("La gata " + luna.getName() + " es " + luna.getColor());
     }
 }
