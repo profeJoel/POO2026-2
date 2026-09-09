@@ -1,5 +1,5 @@
 class Animal:
-    def __init__(self, especie, sexo, nombre, fecha_nacimiento):
+    def __init__(self, especie, sexo, nombre, fecha_nacimiento=None):
         self.especie = especie
         self.sexo = sexo
         self.nombre = nombre
@@ -31,8 +31,11 @@ class Animal:
 
     # comportamiento
 
-    def come(self, cosa):
-        print(f"{self.nombre} come {cosa}")
+    def come(self, cosa=None):
+        if cosa == None:
+            print(f"{self.nombre} come algo")
+        else:
+            print(f"{self.nombre} come {cosa}")
 
     def hace_sonido(self):
         print(f"{self.nombre} hace un sonido...")

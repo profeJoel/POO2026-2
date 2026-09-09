@@ -6,3 +6,6 @@ class Perro(Animal):
         super().__init__(especie, sexo, nombre, fecha_nacimiento)
         self.raza = raza
         self.es_mascota = es_mascota
+
+    def hace_sonido(self):
+        print(f"{self.nombre} hace un guau...")
